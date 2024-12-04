@@ -1,0 +1,487 @@
+
+/*
+    RESET
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 29, 20);
+}
+ul, ol, li{
+    list-style: none;
+}
+li{
+    font-size: 25px;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+.grupo{
+    height: 100vh;
+}
+
+/*************************************************/
+
+/* 
+    HEADER 
+*/
+header{
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+header nav a{
+    padding: 1vw;
+}
+nav{
+    background-color: white;
+    width:35%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 30px;
+}
+ul{
+    display: flex;
+}
+
+/**********************************/
+
+/*
+     PAGINA INICIAL
+*/
+
+#inicial{
+    background-image: url(./img/inicial.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+}
+.title{
+    width: 90%;
+    padding-left: 20vw;
+}
+.title h1{
+    color: aliceblue;
+    font-size: 15rem;
+    line-height: 65%;
+}
+.autores{
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+    background-color: rgb(0, 29, 20);
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.progamadores{
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+#progamador{
+    
+    width:6vw;
+}
+.professor{
+    align-items: center;
+    display: flex;
+}
+#professor{
+    width: 5.1vw;
+}
+h2{
+    color: white;
+}
+
+/***************************************/
+.lamarck{
+    width: 100%;
+    background-color: rgb(0, 29, 20);
+    height: 50%;
+    padding-left: 5vw;
+    align-items: center;
+    display: flex;
+}
+#lamarck{
+    width: 17vw;
+    height: 40vh;
+}
+.lamarck p{
+    width: 60%;
+    color: white;
+    font-size: 30px;
+    padding-left: 2vw;
+}
+.darwin{
+    width: 100%;
+    height: 50%;
+    padding-left: 5vw;
+    align-items: center;
+    display: flex;
+    background-color: white;
+}
+#darwin{
+    width: 17vw;
+    height: 40vh;
+}
+.darwin p{
+    width: 60%;
+    color: rgb(0, 29, 20);
+    font-size: 30px;
+    padding-left: 2vw;
+}
+.tema{
+    position: absolute;
+    right:0;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    background-color: rgb(0, 87, 60);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.tema h1{
+    color: white;
+    font-size: 10vh;
+    width: 5vw;
+}
+/****************************************************/
+
+/*
+
+ EVOLUÇÃO
+
+*/
+
+#evolucao{
+    background-image: url(./img/infos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#titulo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titulo h1{
+    color: white;
+    font-size: 3rem;
+}
+.card{
+    background-color: white;
+    height: 30vh;
+    width: 25vw;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap:10%;
+    flex-direction: column;
+}
+.card p{
+    color: rgb(0, 29, 20);
+    font-size: 2rem;
+    text-align: center;
+}
+#meio{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.vermais{
+    background-color: rgb(0, 29, 20);
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.vermais a{
+    color: white;
+}
+/***********************************************************/
+
+/*
+    MATERIAL
+*/
+#material{
+    background-color: rgb(0, 29, 20);
+}
+#top{
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+#top{
+    color: white;
+    font-size: 2rem;
+}
+#materiais{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.estudos{
+    background-color: white;
+    height: 80%;
+    width: 30%;
+    border-radius: 34px;
+    gap: 15px;
+}
+#foto1{
+    height: 50%;
+    width: 100%;
+    background-image: url(./img/material1.png);
+    background-size: cover;
+    border-top-left-radius: 34px;
+    border-top-right-radius: 34px;
+    background-repeat: no-repeat;
+}
+#foto2{
+    height: 50%;
+    width: 100%;
+    background-image: url(./img/material2.png);
+    background-size: cover;
+    border-top-left-radius: 34px;
+    border-top-right-radius: 34px;
+    background-repeat: no-repeat;
+}
+.estudos h2{
+    color: rgb(0, 29, 20);
+    font-size: 3rem;
+    padding: 20px;
+}
+.estudos p{
+    color: rgb(0, 29, 20);
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.estudos .vermais{
+    background-color: #07AB2C;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 25%;
+    height: 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+/*******************************************/
+
+
+@media(max-width: 960px){
+    header{
+        width: 100%;
+        height: 5vh;
+    }
+    header nav a{
+        padding: 1vw;
+    }
+    nav{
+        width:75%;
+        padding: 2px;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+    .title h1{
+        font-size: 6rem;
+    }
+    .progamadores {
+        font-size:1rem;
+        width: 35%;
+    }
+    #progamador{
+        display: none;
+    }
+    .professor{
+        font-size: 1rem;
+    }
+    #professor{
+        display: none;
+    }
+    .tema h1{
+        display: none;
+    }
+    .lamarck p{
+        font-size: 1rem;
+        width: 75%;
+    }
+    #lamarck{
+        width: 30vw;
+        height: 35vh;
+    }
+    #darwin{
+        width: 30vw;
+        height: 35vh;
+    }
+    .darwin p{
+        font-size: 1rem;
+        width: 75%;
+    }
+    .card p{
+        font-size: 1.5rem;
+    }
+    .vermais{
+        font-size: 2rem;
+        height: 1vh;
+    }
+    .card{
+        width: 100%;
+    }
+    #top{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .estudos p{
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+    .estudos h2{
+        font-size: 1.8rem;
+        padding: 0.3rem;
+    }
+    .estudos{
+        width: 70%;
+
+    }
+    #materiais{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .estudos .vermais{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 30%;
+    }
+}
+@media(max-width: 690px){
+    header{
+        width: 100%;
+        height: 5vh;
+    }
+    header nav a{
+        padding: 1vw;
+    }
+    nav{
+        width:75%;
+        padding: 2px;
+    }
+    li{
+        font-size: 10px;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+    .progamadores {
+        font-size: 0.6rem;
+        width: 35%;
+    }
+    #progamador{
+        display: none;
+    }
+    .professor{
+        font-size: 5px;
+    }
+    #professor{
+        display: none;
+    }
+    .tema h1{
+        display: none;
+    }
+    .lamarck p{
+        font-size: 0.7rem;
+        width: 75%;
+    }
+    #lamarck{
+        width: 70px;
+        height: 90px;
+    }
+    #darwin{
+        width: 70px;
+        height: 90px;
+    }
+    .darwin p{
+        font-size: 0.7rem;
+        width: 75%;
+    }
+    .card p{
+        font-size: 0.7rem;
+    }
+    .vermais{
+        font-size: 1rem;
+        height: 1vh;
+    }
+    .card{
+        width: 100%;
+    }
+    #top{
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .estudos p{
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+    .estudos h2{
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+    .estudos{
+        width: 70%;
+
+    }
+    #materiais{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .estudos .vermais{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+    }
+
+}

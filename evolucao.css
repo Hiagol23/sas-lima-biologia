@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    background-color: #001D14;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.top-bar p {
+    font-size: 1.8rem;
+    font-family: 'Georgia', serif;
+    line-height: 0.7em
+}
+
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.top-bar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+.title-section {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    font-size: 7rem;
+    color: #00573C;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.title-section h2 {
+    letter-spacing: -15px;
+}
+
+#biologia {
+    width: 50%;
+    right: 30%;
+}
+
+.top-bar1 {
+    background-color: #001D14;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.tittle-section {
+    height: 93vh;
+    background-color: #00573c;
+}
+
+.top-bar2 {
+    background-color: #001D14;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 9vh;
+}
+
+#conteudo {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    height: 85%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 960px){
+    .title-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title-section h2{
+        font-size: 4rem;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    #conteudo{
+        font-size: 1.7rem;
+    }
+    #biologia{
+        width: 50vw;
+        height: 50vh;
+    }
+    .tittle-section{
+        height: 100vh;
+    }
+}
+@media (max-width:640px){
+    .title-section h2{
+        font-size: 3rem;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    #biologia{
+        width: 90vw;
+    }
+    #conteudo{
+        font-size: 1.5rem;
+    }
+    .tittle-section{
+        height: 100vh;
+    }
+}
